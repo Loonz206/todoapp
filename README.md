@@ -1,5 +1,5 @@
-Testing the tutorial in Yeoman for a todo application
+###Testing the tutorial in Yeoman for a todo application
 
-To install the application run
+_To install the application run_
 
-npm install && bower install
+<pre>npm install && bower install</pre>
