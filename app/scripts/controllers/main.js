@@ -12,6 +12,9 @@ angular.module('todoappApp')
     }, true);
 
     $scope.addTodo = function () {
+      if($scope.todo === ''){
+        console.log('you already have an "" in your thing');
+      }
       $scope.todos.push($scope.todo);
       $scope.todo = '';
     };
@@ -19,5 +22,7 @@ angular.module('todoappApp')
     $scope.removeTodo = function (index) {
       $scope.todos.splice(index, 1);
     };
+
+    //Need the check function to see if an item is already in the array
 
   });
