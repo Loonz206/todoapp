@@ -12,9 +12,6 @@ angular.module('todoappApp')
     }, true);
 
     $scope.addTodo = function () {
-      if($scope.todo === ''){
-        console.log('you already have an "" in your thing');
-      }
       $scope.todos.push($scope.todo);
       $scope.todo = '';
     };
